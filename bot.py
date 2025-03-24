@@ -23,7 +23,7 @@ class ByData:
             "Sec-Fetch-Dest": "empty",
             "Sec-Fetch-Mode": "cors",
             "Sec-Fetch-Site": "cross-site",
-            "User-Agent": FakeUserAgent().random
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
         }
         self.proxies = []
         self.proxy_index = 0
@@ -41,14 +41,12 @@ class ByData:
         )
 
     def welcome(self):
-        print(
-            f"""
-        {Fore.GREEN + Style.BRIGHT}Auto Claim {Fore.BLUE + Style.BRIGHT}ByData - BOT
-            """
-            f"""
-        {Fore.GREEN + Style.BRIGHT}Rey? {Fore.YELLOW + Style.BRIGHT}<INI WATERMARK>
-            """
-        )
+        print("         ██   ██╗███████╗╗███████╗ ██   ██╗  ████╗  ██   ██   ██  ██  █████    ██████    ")
+        print("         ██╔══██╗██╔════╝╚██╗  ██╔╝██   ██╗  ██║██╔═██══ ██═██    ██  ██   ██  ██        ")
+        print("         ███████║███████╗ ███████╗  █████║   ██  ██ ██   ███      ██  ██    ██ ██████    ")
+        print("         ██╔══██║██╚════║ ██╔╝  ██║╚  ██╗    ██║  ████   ██ ██    ██  ██   ██      ██    ")
+        print("         ██║  ██║███████║ ██║   ██║ ╚ ██     ██║╚  ███╔  ██   ██  ██  █████    ██████    ")
+        print("                                                                             edt by Qu   ")
 
     def format_seconds(self, seconds):
         hours, remainder = divmod(seconds, 3600)
@@ -116,10 +114,8 @@ class ByData:
     def print_question(self):
         while True:
             try:
-                print("1. Run With Monosans Proxy")
-                print("2. Run With Private Proxy")
-                print("3. Run Without Proxy")
-                choose = int(input("Choose [1/2/3] -> ").strip())
+                
+                choose = 3
 
                 if choose in [1, 2, 3]:
                     proxy_type = (
