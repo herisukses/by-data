@@ -1,7 +1,7 @@
 # ByData BOT
 ByData BOT
 
-- Register Here : [ByData](https://bydata.app/?refCode=S4ML6AMW)
+- Register Here : [ByData](https://bydata.app/?refCode=C2DCNBG1)
 
 ## Features
 
